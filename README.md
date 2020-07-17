@@ -27,7 +27,7 @@ Kickstarter is a fundraising platform with the goal to help “bring creative pr
 Each row is a record of the performance of one unique project with the Kickstarter internal ID as the unique identifier.
 
 ## Goal
-We are trying to predict whether a project successful or failed.
+We are trying to predict whether a project is successful or failed.
 
 ## Exploratory Analysis of the Data
 We have decided to remove the columns pledged and goal because data in these two columns are in different currency types and not standardized. Instead, we will be using columns usd_pledged_real and usd_goal_real, which are the same numbers converted to USD and standardized. In addition, usd pledged is removed because the conversion done by this column is more problematic. The same information is provided by the variable usd_pledged_real.
