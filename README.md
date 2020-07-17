@@ -24,7 +24,9 @@ Kickstarter is a fundraising platform with the goal to help “bring creative pr
 - usd_goal_real is the fundraising goal. Data in the goal column is converted to USD and standardized.
 
 2. Each Row
-Each row is a record of the performance of one unique project with the Kickstarter internal ID as the unique identifier.## Goal
+Each row is a record of the performance of one unique project with the Kickstarter internal ID as the unique identifier.
+
+## Goal
 We are trying to predict whether a project successful or failed.
 
 ## Exploratory Analysis of the Data
