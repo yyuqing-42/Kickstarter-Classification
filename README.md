@@ -34,9 +34,9 @@ We also checked for duplicates and removed problematic rows, the shape of our Da
 
 In order to prepare the data for further analysis and modeling, we have created a few new features from existing ones. The list of features created are as follows:
 
-1. project_length: This feature tracks the number of days between a project's launch date and deadline where a project was active for. 
-2. pledged_per_backer: This feature tracks the mean amount of money (converted to USD) pledged by each individual backer. 
-3. percent_funded: This feature tracks the percentage of the goal amount achieved.
+- project_length: This feature tracks the number of days between a project's launch date and deadline where a project was active for. 
+- pledged_per_backer: This feature tracks the mean amount of money (converted to USD) pledged by each individual backer. 
+- percent_funded: This feature tracks the percentage of the goal amount achieved.
 
 Finally, we have decided to keep only rows with states "Failed" or "Successful" because we are only interested in these two outcomes of the projects. The final dataset that is going to be used for analysis in this project has a shape of (292819,15).
 
@@ -62,9 +62,9 @@ Although the biggest factor in determining the success of a project is the conte
 Lastly, based on our logistic model, we have discovered that the relationships between the variables goal, project length, and pledged per backer are significant in influencing the outcome of the project. Thus, creators should take note of these basic setup of their projects prior to launch.
 
 ## Limitations and Further Research
-1. If we have data regarding the reward tiers set up by creators, we can see whether there is an optimal number of rewards or reward pledge amount that would incentivize backers to pledge more and increase the probability of success.
+- If we have data regarding the reward tiers set up by creators, we can see whether there is an optimal number of rewards or reward pledge amount that would incentivize backers to pledge more and increase the probability of success.
 
-2. While we were working on the project, we wanted to investigate the probability of success of projects that were relaunched but we were limited since we could not easily decide whether projects with the same name are necessarily the same projects. It would be helpful if we also had the names of creators in the dataset.
+- While we were working on the project, we wanted to investigate the probability of success of projects that were relaunched but we were limited since we could not easily decide whether projects with the same name are necessarily the same projects. It would be helpful if we also had the names of creators in the dataset.
 Information suggested by prior research, such as whether a campaign includes a video, the length of the description, or the social media presence of the team behind a project simply were not present in this dataset and should be looked into if collected.
 
-3. Lastly, it would also be helpful if we have variables that inform us of the number of visits each project has received, and also whether or not the project has been featured or recommended on the platform. This information would help us come up with more insights to advise creators on how to improve the probability of success for their projects.
+- Lastly, it would also be helpful if we have variables that inform us of the number of visits each project has received, and also whether or not the project has been featured or recommended on the platform. This information would help us come up with more insights to advise creators on how to improve the probability of success for their projects.
