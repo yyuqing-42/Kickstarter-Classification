@@ -32,33 +32,25 @@ Each row is a record of the performance of one unique project with the Kickstart
 We are trying to predict whether a project is successful or failed.
 
 ## Exploratory Analysis of the Data
-We have decided to remove the columns pledged and goal because data in these two columns are in different currency types and not standardized. Instead, we will be using columns usd_pledged_real and usd_goal_real, which are the same numbers converted to USD and standardized. In addition, usd pledged is removed because the conversion done by this column is more problematic. The same information is provided by the variable usd_pledged_real.
 
-We also checked for duplicates and removed problematic rows, the shape of our DataFrame has gone from (378661,15) to (374847, 15), a removal of approximately 1.01% of the original data.
-
-In order to prepare the data for further analysis and modeling, we have created a few new features from existing ones. The list of features created are as follows:
+In order to prepare the data for further analysis and modeling, we have created three new features from existing ones. The list of features created are as follows:
 
 - project_length: This feature tracks the number of days between a project's launch date and deadline where a project was active for. 
 - pledged_per_backer: This feature tracks the mean amount of money (converted to USD) pledged by each individual backer. 
 - percent_funded: This feature tracks the percentage of the goal amount achieved.
 
-Finally, we have decided to keep only rows with states "Failed" or "Successful" because we are only interested in these two outcomes of the projects. The final dataset that is going to be used for analysis in this project has a shape of (292819,15).
+
+
 
 ## Guiding Questions 
 #### 1. Which category is the most well-funded?
-Top 3 categories by success rate are Dance, Theater, and Comics.
-Top 3 categories that visitors to Kickstarter care about and fund the most are Design, Techology, and Games.
 
 #### 2. What are some highly successful projects?
-We looked at projects that have fundraised amounts far exceeding their goals (variable: percent_funded). We found that most projects with outlier success have very low goals, as low as $1, are mostly from category Music and Art. And Highly sucessful projetcs with resonable goals are mostly from category Games and Design.
-
-Also factors such as popularity, extremely low goal or meme/joke projects influence the success rate of a project.
 
 #### 3. What are some factors that may impact the outcome of a project?
-We found that successful projects tend to have lower goals. Alsoe we indeed notice a consistent trend where failed projects tend to have a longer project_length than successful projects. That's why Kickstarter suggests a maximum project length is 30 days. Lastly, we can see that the average pledged_per_backer is higher for successful projects across all categories.
 
 ## Data Modeling
-Achieved 74% test accuracy with KNN model and 68% test accuracy with logistic regression model
+Achieved 74% test accuracy with KNN model and 68% test accuracy with logistic regression model.
 
 ## Conclusions
 Although the biggest factor in determining the success of a project is the content and the project itself, there are some external factors that could influence the probability of success. From our investigation, we found that the most well-funded projects on Kickstarter are of the categories Games, Design, and Technology, which gives creators a sense of the target audience they are reaching when they decide to launch their projects on Kickstarter. We have also found that setting a reasonable goal will improve success rate. 
