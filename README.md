@@ -6,24 +6,26 @@ Kai Chen Tan, Qi Jing Yap, Yuqing Yang, Steven Salmeron
 Kickstarter is a fundraising platform with the goal to help “bring creative projects to life” by providing a way for creators and artists to be funded directly by fans of their projects. The platform was launched on April 28, 2009 and has seen over 450,000 projects pass through it since then. We obtained the data from Kaggle:https://www.kaggle.com/kemical/kickstarter-projects/ The dataset being analyzed for this project was scraped from Kickstarter platform by a Kaggle user, Mickaël Mouillé. This dataset contains information of over 300,000 Kickstarter projects up to January 2, 2018.
 
 ## Discussion of Varibales
-1. Each Column 
-- ID is the internal Kickstarter ID, unique for each project.
-- name is the name of a project.
-- category is the subcategory a project belongs to. There are 5 to 20 subcategories within each main category.
-- main_category is a classification of projects based on shared characteristics. There are 15 main categories set by Kickstarter.
-- currency is the local currency used for the campaign.
-- deadline is the date a project was scheduled to end.
-- goal is the fundraising goal set by the creator of a project. Data in this column is of different currency types and not standardized.
-- launched gives the date and time the project was started in the platform.
-- pledged is the amount of money a project fundraised. Data in this column is of different currency types and not standardized.
-- state indicates the outcome of a project, whether it was successful, failed, cancelled or suspended. Ongoing projects are labeled as live, and some project status are undefined.
-- backers is the number of backers who have agreed to contribute to a project.
-- country gives the abbreviation of the country where the Kickstarter project was launched.
-- usd pledged is the conversion of the pledged column to US dollars (conversion done by Kickstarter).
-- usd_pledged_real is the amount of money a project fundraised. Data in the pledged column is converted to USD and standardized.
-- usd_goal_real is the fundraising goal. Data in the goal column is converted to USD and standardized.
+1. Each Column
+
+- 'ID' is the internal Kickstarter ID, unique for each project.
+- 'name' is the name of a project.
+- 'category' is the subcategory a project belongs to. There are 5 to 20 subcategories within each main category.
+- 'main_category' is a classification of projects based on shared characteristics. There are 15 main categories set by Kickstarter.
+- 'currency' is the local currency used for the campaign.
+- 'deadline' is the date a project was scheduled to end.
+- 'goal' is the fundraising goal set by the creator of a project. Data in this column is of different currency types and not standardized.
+- 'launched' gives the date and time the project was started in the platform.
+- 'pledged' is the amount of money a project fundraised. Data in this column is of different currency types and not standardized.
+- 'state' indicates the outcome of a project, whether it was successful, failed, cancelled or suspended. Ongoing projects are labeled as live, and some project status are undefined.
+- 'backers' is the number of backers who have agreed to contribute to a project.
+- 'country' gives the abbreviation of the country where the Kickstarter project was launched.
+- 'usd pledged' is the conversion of the pledged column to US dollars (conversion done by Kickstarter).
+- 'usd_pledged_real' is the amount of money a project fundraised. Data in the pledged column is converted to USD and standardized.
+- 'usd_goal_real' is the fundraising goal. Data in the goal column is converted to USD and standardized.
 
 2. Each Row
+
 Each row is a record of the performance of one unique project with the Kickstarter internal ID as the unique identifier.
 
 ## Goal
