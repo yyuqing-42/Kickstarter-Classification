@@ -43,11 +43,11 @@ In order to prepare the data for further analysis and modeling, we have created 
 
 
 ## Guiding Questions 
-#### 1. Which category is the most well-funded?
+1. Which category is the most well-funded?
 
-#### 2. What are some highly successful projects?
+2. What are some highly successful projects?
 
-#### 3. What are some factors that may impact the outcome of a project?
+3. What are some factors that may impact the outcome of a project?
 
 ## Data Modeling
 Achieved 74% test accuracy with KNN model and 68% test accuracy with logistic regression model.
