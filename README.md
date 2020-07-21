@@ -39,8 +39,7 @@ In order to prepare the data for further analysis and modeling, we have created 
 - pledged_per_backer: This feature tracks the mean amount of money (converted to USD) pledged by each individual backer. 
 - percent_funded: This feature tracks the percentage of the goal amount achieved.
 
-
-
+We conducted in-depth data analysis, including checking for duplicates, missing values, and outliers. We also presented the data by including histograms, proportional tables, scatter plots, and bpxplots.
 
 ## Guiding Questions 
 1. Which category is the most well-funded?
